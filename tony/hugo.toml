@@ -1,5 +1,5 @@
 baseURL = "/"
-title = "Spectral"
+title = "Dark Star"
 languageCode = "en-us"
 defaultContentLanguage = "en"
 paginate = "7"
@@ -7,9 +7,9 @@ theme = "spectral-master"
 #googleAnalytics = "G-XXXXXXXXXX"
 
 [params]
-fancyTitle = "Spectral" # title for frontpage, may include image
-copyright = "John Doe"
-description = 'Another fine responsive<br />site template freebie<br />crafted by <a href="http://html5up.net">HTML5 UP</a>.<br />Ported to <a href="//gohugo.io">Hugo</a> by Simon Bruder.'
+fancyTitle = "Tony Tunnel" # title for frontpage, may include image
+copyright = "Tony Tunnel"
+description = 'Most Powerful VPN FOR BYPASSING  ANNOYING RESTRICTIONS'
 startbuttonText = "Activate"
 startbuttonLink = "#"
 body_is_markdown = true
@@ -24,6 +24,10 @@ title = "Home"
 [[params.menu.main]]
 url = '/posts/'
 title = "Posts"
+
+[[params.menu.main]]
+url = '/pricing/'
+title = "Price"
 
 [taxonomies]
     tag = "tags"
