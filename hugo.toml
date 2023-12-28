@@ -29,6 +29,10 @@ title = "Posts"
 url = '/pricing/'
 title = "Price"
 
+[[params.menu.main]]
+url = '/support/'
+title = "Support"
+
 [taxonomies]
     tag = "tags"
     category = "categories"
