@@ -1,5 +1,5 @@
 baseURL = "/"
-title = "Dark Star"
+title = "Tony Tunnel"
 languageCode = "en-us"
 defaultContentLanguage = "en"
 paginate = "7"
@@ -9,7 +9,7 @@ theme = "spectral-master"
 [params]
 fancyTitle = "Tony Tunnel" # title for frontpage, may include image
 copyright = "Tony Tunnel"
-description = 'Most Powerful VPN FOR BYPASSING  ANNOYING RESTRICTIONS'
+description = 'Most Powerful Tunnel for FREEDOM !!'
 startbuttonText = "Activate"
 startbuttonLink = "#"
 body_is_markdown = true
