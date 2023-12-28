@@ -1,0 +1,32 @@
+[menu]
+other = "பட்டியல்"
+
+[learnmore]
+other = "மேலும் அறிக"
+
+[name]
+other = "பெயர்"
+
+[email]
+other = "மின்னஞ்சல்"
+
+[phone]
+other = "டெலிபோன்"
+
+[address]
+other = "முகவரி"
+
+[yourmessage]
+other = "உங்கள் தகவல்"
+
+[send]
+other = "அனுப்பு"
+
+[reset]
+other = "மீட்டமை"
+
+[allarticles]
+other = "அனைத்து கட்டுரைகள்"
+
+[readmore]
+other = "மேலும் வாசிக்க…"

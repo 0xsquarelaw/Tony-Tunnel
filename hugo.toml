@@ -139,7 +139,7 @@ title = "Contact"
 body = "Leave us a message."
 phone = "+49 (0) 030 000 000"
 address = "1234 Somewhere Road<br />Some Place, Some State 0000<br />Some Country"
-email = "nospam@example.com"
+email = "contact@example.com"
 subject = "New Submission!"
 formspree_form_id = "example_invalid"
 
@@ -158,10 +158,14 @@ dribble = ""
 weight = 0
 languageName = "English"
 
-[languages.de]
+[languages.tel]
 weight = 10
-languageName = "Deutsch"
+languageName = "Telugu"
 
-[languages.es]
+[languages.tam]
 weight = 10
-languageName = "Español"
+languageName = "Tamil"
+
+[languages.mal]
+weight = 10
+languageName = "Malayalam"
