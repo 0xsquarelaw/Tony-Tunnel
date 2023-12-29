@@ -5,16 +5,11 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
 
 // Component Imports
-import CallToAction from '../components/CallToAction.astro';
-import Grid from '../components/Grid.astro';
 import Hero from '../components/Hero.astro';
-import Icon from '../components/Icon.astro';
-import Pill from '../components/Pill.astro';
-import PortfolioPreview from '../components/PortfolioPreview.astro';
 
 // Page section components
 import ContactCTA from '../components/ContactCTA.astro';
-import Skills from '../components/Skills.astro';
+import Price from '../components/Price.astro';
 
 // Content Fetching: List four most recent work projects
 const projects = (await getCollection('work'))
@@ -27,29 +22,15 @@ const projects = (await getCollection('work'))
 
 <BaseLayout>
 	<div class="stack gap-20 lg:gap-48">
-			<section class="section with-background bg-variant">
-				<header class="section-header stack gap-2 lg:gap-4">
-					<h3>Pricing</h3>
-					<p>
-						Paisa Nikaaalllllllllllllll
-					</p>
-				</header>
-
-				<div class="gallery">
-					<Grid variant="small">
-						{
-							['P1', 'P2', 'P3'].map((brand) => (
-								<li class="mention-card">
-									<p>{brand}</p>
-								</li>
-                                <br>
-							))
-						}
-					</Grid>
-				</div>
-			</section>
+		<main class="wrapper pricing">
+			<Hero
+				title="Pricing"
+				tagline="Kyu Hila Diya Na...."
+			>
+			</Hero>	
 		</main>
-
+		<!-- i added a page -->
+		<Price />
 		<ContactCTA />
 	</div>
 </BaseLayout>
