@@ -2,13 +2,13 @@
 import Icon from './Icon.astro';
 import ThemeToggle from './ThemeToggle.astro';
 import type { iconPaths } from './IconPaths';
-
+declare var Astro: any;
 /** Main menu items */
 const textLinks: { label: string; href: string }[] = [
 	{ label: 'Home', href: '/' },
-	{ label: 'Work', href: '/work/' },
 	{ label: 'Pricing', href: '/pricing/' },
 	{ label: 'About', href: '/about/' },
+	{ label: 'FAQ', href: '/work/' },
 ];
 
 /** Icon links to social media — edit these with links to your profiles! */
