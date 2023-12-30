@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background-color: #111;
+      margin: 0;
+    }
+
+    #livethreatmap {
+      width: 100%;
+      height: 100vh;
+      pointer-events: auto; /* Enables interaction */
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #000;
+    }
+
+    .loader {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      pointer-events: none; /* Disable interaction during loading */
+    }
+
+    .dot {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: #fff;
+      margin: 10px;
+      animation: pulse 1s infinite;
+    }
+
+    .dot:nth-child(1) {
+      animation-delay: 0s;
+    }
+
+    .dot:nth-child(2) {
+      animation-delay: 0.2s;
+    }
+
+    .dot:nth-child(3) {
+      animation-delay: 0.4s;
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.5);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    .text {
+      color: #fff;
+      font-family: Arial, sans-serif;
+      font-size: 20px;
+    }
+  </style>
+  <script>
+    window.onload = function () {
+      document.getElementById('loading').style.display = 'none';
+    };
+  </script>
+</head>
+<body>
+  <div id="loading" class="container">
+    <div class="loader">
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="text">Monitoring Web, Connecting to Server...</div>
+    </div>
+  </div>
+  <iframe id="livethreatmap" src="https://attackmap.sonicwall.com/live-attack-map/" frameborder="0"></iframe>
+</body>
+</html>
