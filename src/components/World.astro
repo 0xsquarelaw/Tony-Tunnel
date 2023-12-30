@@ -1,89 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      background-color: #111;
-      margin: 0;
-    }
+<div id="box"></div>
+<style>#box {
+  background:url(https://cdn.rawgit.com/ManzDev/cursos-assets/gh-pages/css3/earth-2.jpg);
+  background-size:cover;
+  border:2px solid #000;
+  border-radius:50%;
+  width:500px;
+  height:500px;
+  animation: movimiento 5s linear 0s infinite;
+  box-shadow:0 0 25px RGBA(255,255,255, 0.10),
+             -8px -8px 15px #000 inset,
+             2px 2px 25px #000 inset,
+             -45px -45px 25px RGBA(0,0,0, 0.5) inset, 
+             25px 25px 45px RGBA(0,0,0, 0.45) inset;
+  margin:6em auto;
+  transform:rotateX(6deg) rotateY(6deg) rotateZ(6deg);
+}
 
-    #livethreatmap {
-      width: 100%;
-      height: 100vh;
-      pointer-events: auto; /* Enables interaction */
-    }
+@keyframes movimiento {
+  0% { background-position:0 0 }
+  100% { background-position:355px 0 }
+}
 
-    .container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      background-color: #000;
-    }
-
-    .loader {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      pointer-events: none; /* Disable interaction during loading */
-    }
-
-    .dot {
-      width: 20px;
-      height: 20px;
-      border-radius: 50%;
-      background-color: #fff;
-      margin: 10px;
-      animation: pulse 1s infinite;
-    }
-
-    .dot:nth-child(1) {
-      animation-delay: 0s;
-    }
-
-    .dot:nth-child(2) {
-      animation-delay: 0.2s;
-    }
-
-    .dot:nth-child(3) {
-      animation-delay: 0.4s;
-    }
-
-    @keyframes pulse {
-      0% {
-        transform: scale(1);
-      }
-      50% {
-        transform: scale(1.5);
-      }
-      100% {
-        transform: scale(1);
-      }
-    }
-
-    .text {
-      color: #fff;
-      font-family: Arial, sans-serif;
-      font-size: 20px;
-    }
-  </style>
-  <script>
-    window.onload = function () {
-      document.getElementById('loading').style.display = 'none';
-    };
-  </script>
-</head>
-<body>
-  <div id="loading" class="container">
-    <div class="loader">
-      <div class="dot"></div>
-      <div class="dot"></div>
-      <div class="dot"></div>
-      <div class="text"><br>Connecting to Server...</div>
-    </div>
-  </div>
-  <iframe id="livethreatmap" src="https://attackmap.sonicwall.com/live-attack-map/" frameborder="0"></iframe>
-</body>
-</html>
+@keyframes stars {
+  0% { background-position:0 0 }
+  100% { background-position:0 100% }
+}
+</style>
