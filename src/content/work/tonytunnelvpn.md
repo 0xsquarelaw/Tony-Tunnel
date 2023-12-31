@@ -1,7 +1,7 @@
 ---
 title: What is Tony Tunnel VPN?
 publishDate: 2020-03-04 00:00:00
-img: /assets/stock-3.jpg
+img: /assets/stock-3.png
 img_alt: Tony As Inspiration
 description: |
   Redefining Secure Connectivity for India and it always Free Forever For Indians
