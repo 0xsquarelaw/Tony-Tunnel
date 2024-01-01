@@ -75,26 +75,31 @@ import "../styles/utils.css";
             <div class="shadow"></div>
         </div>
         <h3 id="animationText" style="color: #ffffff;"></h3>
-
         <script>
             // Function to create the dot animation
             function dotAnimation() {
                 const textElement = document.getElementById("animationText");
-                let dots = 0;
-
-                // Update the text content with dots
-                function updateText() {
-                    textElement.textContent =
-                        "Redirecting to Payment Page" + ".".repeat(dots);
-                    dots = (dots + 1) % 4; // Reset to 0 after reaching 3 dots
+        
+                // Use the non-null assertion operator (!) to tell TypeScript that textElement is not null
+                if (textElement!) {
+                    let dots = 0;
+        
+                    // Update the text content with dots
+                    function updateText() {
+                        textElement!.textContent =
+                            "Redirecting to Payment Page" + ".".repeat(dots);
+                        dots = (dots + 1) % 4; // Reset to 0 after reaching 3 dots
+                    }
+        
+                    // Update text every 500 milliseconds (you can adjust the timing)
+                    setInterval(updateText, 500);
+                } else {
+                    console.error("Element with ID 'animationText' not found");
                 }
-
-                // Update text every 500 milliseconds (you can adjust the timing)
-                setInterval(updateText, 500);
             }
-
+        
             // Start the dot animation when the page loads
             dotAnimation();
-        </script>
+        </script>        
     </body>
 </html>
